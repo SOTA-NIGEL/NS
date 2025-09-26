@@ -14,7 +14,7 @@ const Projects = () => {
       technologies: ["React", "TypeScript", "PyTorch", "Streamlit", "pandas", "Node"],
       icon: TrendingUp,
       demoLink: "https://ticket-pilot-nu.vercel.app/",
-      codeLink: "https://github.com/SOTA-NIGEL/ticket-pilot-ai",
+      codeLink: "https://ticket-pilot-nu.vercel.app/",
       color: "primary"
     },
     {
@@ -24,7 +24,7 @@ const Projects = () => {
       description: "Developed a real-time sentiment analysis system online job scraper. Utilizes web scraping to gather real-time job data using transformer models.",
       technologies: ["PyTorch", "Numpy", "", "FastAPI", "Docker", "Redis"],
       icon: MessageSquare,
-      status: "Production",
+      demoLink: "https://github.com/SOTA-NIGEL/Scraper_for-jobs",
       codeLink: "https://github.com/SOTA-NIGEL/Scraper_for-jobs",
       color: "accent"
     },
@@ -35,7 +35,7 @@ const Projects = () => {
       description: "Developed a web application that automates the generation of payslips for employees. Integrates with HR systems to fetch employee data and generate payslips in PDF format.",
       technologies: ["React", "Pandas", "Express", "MongoDB", "PDFKit"],
       icon: Play,
-      demoLink: "#",
+      demoLink: "https://pay-slip-gen.vercel.app/",
       codeLink: "https://pay-slip-gen.vercel.app/",
       color: "accent-secondary"
     }
@@ -66,7 +66,7 @@ const Projects = () => {
                     variant="secondary" 
                     className={`bg-${project.color}/10 text-${project.color} hover:bg-${project.color}/20`}
                   >
-                    {project.status}
+                  
                   </Badge>
                 </div>
 
