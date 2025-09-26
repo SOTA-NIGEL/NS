@@ -40,7 +40,7 @@ const Hero = () => {
           {/* Subtitle */}
           <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.6s' }}>
             <h2 className="text-xl md:text-2xl lg:text-3xl text-foreground mb-8 font-light">
-              ML Engineer • Software Developer
+              ML Engineer | Software Developer
             </h2>
           </div>
 
@@ -48,7 +48,7 @@ const Hero = () => {
           <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.8s' }}>
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
               Passionate about building intelligent systems and scalable solutions. 
-              I blend technical expertise with creative insights in music and art 
+              I blend technical expertise with creative insights in art and design
               to create impactful, user-centered applications.
             </p>
           </div>

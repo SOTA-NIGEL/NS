@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold gradient-text mb-2">Nigel Sota</h3>
             <p className="text-muted-foreground text-sm">
-              Machine Learning Engineer • Software Developer • Musician
+              Machine Learning Engineer | Software Developer | Musician
             </p>
           </div>
 

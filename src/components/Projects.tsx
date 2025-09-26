@@ -33,10 +33,10 @@ const Projects = () => {
       title: "Payslip Generator",
       category: "Web Application",
       description: "Developed a web application that automates the generation of payslips for employees. Integrates with HR systems to fetch employee data and generate payslips in PDF format.",
-      technologies: ["Python", "Pandas", "Express", "MongoDB", "PDFKit"],
+      technologies: ["React", "Pandas", "Express", "MongoDB", "PDFKit"],
       icon: Play,
       demoLink: "#",
-      codeLink: "https://github.com/SOTA-NIGEL/payslipgenerator",
+      codeLink: "https://pay-slip-gen.vercel.app/",
       color: "accent-secondary"
     }
   ];
