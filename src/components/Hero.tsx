@@ -21,8 +21,8 @@ const Hero = () => {
         backgroundAttachment: 'fixed'
       }}
     >
-      {/* MODIFICATION: Changed pt-8 to pt-10 (40px) to achieve 40px distance from the top/navbar area. */}
-      <div className="container mx-auto px-6 text-center relative z-10 pt-10">
+      {/* MODIFICATION: Changed pt-10 to pt-15. Tailwind's default spacing scale includes pt-15 (60px) which meets your request. */}
+      <div className="container mx-auto px-6 text-center relative z-10 pt-15">
         <div className="max-w-4xl mx-auto">
           
           {/* Introduction Text - HELLO, I'M */}
