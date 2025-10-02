@@ -21,35 +21,32 @@ const Hero = () => {
         backgroundAttachment: 'fixed'
       }}
     >
-      {/* The 'pt-5' (20px) on the container ensures the content starts 20px below the top edge of the section, assuming the navbar has a fixed height that fits in this area. */}
-      <div className="container mx-auto px-6 text-center relative z-10 pt-5">
+      {/* MODIFICATION: Changed pt-5 to pt-8 (32px) to achieve approximately 30px distance from the top/navbar area. */}
+      <div className="container mx-auto px-6 text-center relative z-10 pt-8">
         <div className="max-w-4xl mx-auto">
           
-          {/* Introduction Text - VISIBLE (Animations Removed) */}
+          {/* Introduction Text - HELLO, I'M */}
           <div>
             <p className="text-xl md:text-2xl text-primary mb-4 tracking-widest uppercase font-semibold">
               HELLO, I'M
             </p>
           </div>
 
-          {/* Main Name - FONT SIZE REDUCED (e.g., from lg:text-6xl to lg:text-5xl) */}
-          {/* The classes for h1 were changed from 'text-3xl md:text-5xl lg:text-6xl' to 'text-2xl md:text-4xl lg:text-5xl' to reduce the font size across screen sizes. */}
+          {/* Main Name - SOTA NIGEL (Font size is already reduced from the previous request) */}
           <div>
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 gradient-text overflow-visible whitespace-nowrap leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] px-2 pt-2.5 ">
               SOTA NIGEL
             </h1>
           </div>
 
-          {/* Subtitle - VISIBLE (Animations Removed) */}
-          {/* Removed: animate-fade-in-up opacity-0 and style={{ animationDelay: '0.6s' }} */}
+          {/* Subtitle */}
           <div>
             <h2 className="text-xl md:text-2xl lg:text-3xl text-foreground mb-8 font-light">
               ML Engineer | Software Developer
             </h2>
           </div>
 
-          {/* Description - VISIBLE (Animations Removed) */}
-          {/* Removed: animate-fade-in-up opacity-0 and style={{ animationDelay: '0.8s' }} */}
+          {/* Description */}
           <div>
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
               Passionate about building intelligent systems and scalable solutions. 
@@ -58,8 +55,7 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Action Buttons - VISIBLE (Animations Removed) */}
-          {/* Removed: animate-fade-in-up opacity-0 and style={{ animationDelay: '1s' }} */}
+          {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button 
               size="lg" 
@@ -78,8 +74,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Social Links - VISIBLE (Animations Removed) */}
-          {/* Removed: animate-fade-in-up opacity-0 and style={{ animationDelay: '1.2s' }} */}
+          {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-16">
             <a 
               href="https://github.com/sota-nigel" 
@@ -105,8 +100,7 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Scroll Indicator - VISIBLE (Animations Removed) */}
-          {/* Removed: animate-fade-in-up opacity-0 and style={{ animationDelay: '1.4s' }} */}
+          {/* Scroll Indicator */}
           <div>
             <button 
               onClick={() => scrollToSection('about')}
@@ -121,7 +115,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Background Elements (Retained animations for visual effect) */}
+      {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-float opacity-60"></div>
         <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-accent rounded-full animate-float opacity-40" style={{ animationDelay: '1s' }}></div>
