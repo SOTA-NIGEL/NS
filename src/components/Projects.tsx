@@ -19,12 +19,12 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Web Scraper",
+      title: "REAL JOB FINDER",
       category: "Natural Language Processing",
       description: "Developed a real-time sentiment analysis system online job scraper. Utilizes web scraping to gather real-time job data using transformer models.",
       technologies: ["PyTorch", "Numpy", "", "FastAPI", "Docker", "Redis"],
       icon: MessageSquare,
-      demoLink: "https://github.com/SOTA-NIGEL/Scraper_for-jobs",
+      demoLink: "https://career-path-orcin.vercel.app/",
       codeLink: "https://github.com/SOTA-NIGEL/Scraper_for-jobs",
       color: "accent"
     },
