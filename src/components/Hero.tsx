@@ -13,7 +13,8 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      // The centering classes (flex items-center justify-center) already keep everything central vertically and horizontally.
+      className="min-h-screen flex items-center justify-center relative overflow-hidden" 
       style={{
         backgroundImage: `linear-gradient(rgba(18, 20, 38, 0.8), rgba(18, 20, 38, 0.9)), url(${heroBackground})`,
         backgroundSize: 'cover',
@@ -21,7 +22,14 @@ const Hero = () => {
         backgroundAttachment: 'fixed'
       }}
     >
-      <div className="container mx-auto px-6 text-center relative z-10">
+      {/* Modified: Added 'pt-3' (padding-top: 0.75rem or 12px) to shift the content block down.
+        This centers the content relative to the *available* vertical space below the padding.
+        A static 10px shift is best achieved by a small padding on the container or an 
+        explicit top-margin on the first element if not using a navbar.
+        Since the whole block is centered, adding a small padding-top is a clean way 
+        to bias the content lower on the screen while maintaining overall centering.
+      */}
+      <div className="container mx-auto px-6 text-center relative z-10 pt-3">
         <div className="max-w-4xl mx-auto">
           {/* Introduction Text - NOW MORE VISIBLE */}
           <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.2s' }}>
@@ -30,9 +38,10 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Main Name - FONT SIZE REDUCED */}
+          {/* Main Name - FONT SIZE REDUCED AGAIN */}
           <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.4s' }}>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 gradient-text overflow-visible whitespace-nowrap leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] px-2 pt-2.5 ">
+            {/* Reduced from 'text-4xl md:text-6xl lg:text-7xl' to 'text-3xl md:text-5xl lg:text-6xl' */}
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 gradient-text overflow-visible whitespace-nowrap leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] px-2 pt-2.5 ">
               SOTA NIGEL
             </h1>
           </div>
