@@ -55,8 +55,8 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Action Buttons: CHANGED mb-4 to mb-2 for tighter spacing (8px) */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-2">
+          {/* Action Buttons: CHANGED mb-2 to mb-6 for a balanced 24px gap */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Button 
               size="lg" 
               className="bg-gradient-primary hover:opacity-90 shadow-glow transition-all duration-300 hover:shadow-elegant"
@@ -74,8 +74,8 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Social Links: CHANGED mb-16 to mb-0 (or removed it entirely) to minimize space below the button block */}
-          <div className="flex justify-center space-x-6 mb-8"> {/* Adjusted mb to 8 to maintain breathing room before the scroll indicator */}
+          {/* Social Links: Kept mb-8 to provide space before the scroll indicator */}
+          <div className="flex justify-center space-x-6 mb-8">
             <a 
               href="https://github.com/sota-nigel" 
               target="_blank" 
@@ -100,7 +100,7 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Scroll Indicator - No change needed here */}
+          {/* Scroll Indicator */}
           <div>
             <button 
               onClick={() => scrollToSection('about')}
