@@ -13,8 +13,7 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      // Main spacing from top maintained (pt-32)
-      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-32 pb-16"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(rgba(18, 20, 38, 0.8), rgba(18, 20, 38, 0.9)), url(${heroBackground})`,
         backgroundSize: 'cover',
@@ -24,39 +23,38 @@ const Hero = () => {
     >
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          
-          {/* Introduction Text */}
-          <div className="mt-8"> 
-            <p className="text-lg text-muted-foreground mb-4 tracking-wider uppercase">
+          {/* Introduction Text - NOW MORE VISIBLE */}
+          <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.2s' }}>
+            <p className="text-xl md:text-2xl text-primary mb-4 tracking-widest uppercase font-semibold">
               HELLO, I'M
             </p>
           </div>
 
-          {/* Main Name */}
-          <div> 
+          {/* Main Name - FONT SIZE REDUCED */}
+          <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.4s' }}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 gradient-text overflow-visible whitespace-nowrap leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] px-2 pt-2.5 ">
               SOTA NIGEL
             </h1>
           </div>
 
           {/* Subtitle */}
-          <div> 
+          <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.6s' }}>
             <h2 className="text-xl md:text-2xl lg:text-3xl text-foreground mb-8 font-light">
               ML Engineer | Software Developer
             </h2>
           </div>
 
           {/* Description */}
-          <div> 
+          <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.8s' }}>
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
               Passionate about building intelligent systems and scalable solutions. 
-              I blend technical expertise with creative insights with creative insights in art and design
+              I blend technical expertise with creative insights in art and design
               to create impactful, user-centered applications.
             </p>
           </div>
 
-          {/* Action Buttons: CHANGED mb-2 to mb-6 for a balanced 24px gap */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+          {/* Action Buttons */}
+          <div className="animate-fade-in-up opacity-0 flex flex-col sm:flex-row gap-4 justify-center mb-16" style={{ animationDelay: '1s' }}>
             <Button 
               size="lg" 
               className="bg-gradient-primary hover:opacity-90 shadow-glow transition-all duration-300 hover:shadow-elegant"
@@ -74,8 +72,8 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Social Links: Kept mb-8 to provide space before the scroll indicator */}
-          <div className="flex justify-center space-x-6 mb-8">
+          {/* Social Links */}
+          <div className="animate-fade-in-up opacity-0 flex justify-center space-x-6 mb-16" style={{ animationDelay: '1.2s' }}>
             <a 
               href="https://github.com/sota-nigel" 
               target="_blank" 
@@ -101,7 +99,7 @@ const Hero = () => {
           </div>
 
           {/* Scroll Indicator */}
-          <div>
+          <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '1.4s' }}>
             <button 
               onClick={() => scrollToSection('about')}
               className="text-muted-foreground hover:text-primary transition-colors animate-float"
