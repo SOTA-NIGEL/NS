@@ -21,8 +21,8 @@ const Hero = () => {
         backgroundAttachment: 'fixed'
       }}
     >
-      {/* MODIFICATION: Changed pt-5 to pt-8 (32px) to achieve approximately 30px distance from the top/navbar area. */}
-      <div className="container mx-auto px-6 text-center relative z-10 pt-8">
+      {/* MODIFICATION: Changed pt-8 to pt-10 (40px) to achieve 40px distance from the top/navbar area. */}
+      <div className="container mx-auto px-6 text-center relative z-10 pt-10">
         <div className="max-w-4xl mx-auto">
           
           {/* Introduction Text - HELLO, I'M */}
@@ -32,7 +32,7 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Main Name - SOTA NIGEL (Font size is already reduced from the previous request) */}
+          {/* Main Name - SOTA NIGEL (Font size remains reduced) */}
           <div>
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 gradient-text overflow-visible whitespace-nowrap leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] px-2 pt-2.5 ">
               SOTA NIGEL
