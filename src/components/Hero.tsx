@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      // The centering classes (flex items-center justify-center) already keep everything central vertically and horizontally.
+      // The centering classes keep everything central vertically and horizontally.
       className="min-h-screen flex items-center justify-center relative overflow-hidden" 
       style={{
         backgroundImage: `linear-gradient(rgba(18, 20, 38, 0.8), rgba(18, 20, 38, 0.9)), url(${heroBackground})`,
@@ -22,11 +22,13 @@ const Hero = () => {
         backgroundAttachment: 'fixed'
       }}
     >
-      {/* MODIFIED: Changed 'pt-3' to 'pt-4' to increase top padding to ~16px (1rem), moving the content down slightly further. */}
+      {/* Retained 'pt-4' (16px) to position content below the navbar area */}
       <div className="container mx-auto px-6 text-center relative z-10 pt-4">
         <div className="max-w-4xl mx-auto">
-          {/* Introduction Text - NOW SHIFTED DOWN */}
-          <div className="animate-fade-in-up opacity-0" style={{ animationDelay: '0.2s' }}>
+          
+          {/* Introduction Text - IMMEDIATELY VISIBLE & POSITIONED */}
+          {/* Removed animation and opacity classes. */}
+          <div>
             <p className="text-xl md:text-2xl text-primary mb-4 tracking-widest uppercase font-semibold">
               HELLO, I'M
             </p>
